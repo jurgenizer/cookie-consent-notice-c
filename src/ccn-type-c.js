@@ -26,7 +26,7 @@ class CookieConsentNotice {
   addCss() {
     const stylesheet = document.createElement('link');
     stylesheet.setAttribute('rel', 'stylesheet');
-    stylesheet.setAttribute('href', 'ccn-type-a.css');
+    stylesheet.setAttribute('href', 'ccn-type-c.css');
     document.head.appendChild(stylesheet);
   }
 
