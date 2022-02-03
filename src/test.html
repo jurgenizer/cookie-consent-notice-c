@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <!-- Title -->
+  <title>cookie consent notice test</title>
+  <meta name="description" content="Simple HTML document to test a cookie consent notice.">
+
+  <!--Import Bulma CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+
+  <!-- JavaScript for CookieConsentNotice-->
+  <script src="ccn-type-a.js"></script> 
+  <script>
+    cookieConsentNotice.start('en', {
+        analytics: 'G-FH87DE17XF', 
+        hideAfterClick: true,
+        border: 'none',
+        position: 'left',
+        policyLink: 'https://happyhols.co.za/privacy-policy/',
+        bannerDescription: 'We use cookies to improve performance, service, and to better understand your needs. By accepting third-party cookies, we and our partners are able to offer you more relevant advertising on and outside of our website. Do you consent to this use of cookies? You can find more information in our',
+        bannerLinkText: 'Privacy Policy',
+        acceptBtnText: 'Accept',
+        rejectBtnText: 'Decline',
+        rejectBtnBackground: '#fff',  
+      });
+  </script>
+
+</head>
+<body>
+
+  <section class="section">
+    <div class="container">
+      <h1 class="title">
+        Type a
+      </h1>
+      <p class="subtitle">A cookie consent notice test</p>
+    </div>
+  </section>
+
+</body>
+</html>
