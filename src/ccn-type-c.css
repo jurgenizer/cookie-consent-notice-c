@@ -26,7 +26,7 @@
   font-family: inherit;
   position: fixed;
   width: auto;
-  max-width: 425px;
+  max-width: 545px;
   z-index: 999;
   -webkit-box-shadow: 0 .625em 1.875em rgba(2,2,3,.2);
   -moz-box-shadow: 0 .625em 1.875em rgba(2,2,3,.2);
@@ -39,7 +39,7 @@
   padding: 13px 15px;
   font-size: 15px;
   font-family: inherit;
-  width: 49%;
+  width: 32%;
   cursor: pointer;
   font-weight: bolder;
   transition: filter 0.15s;
@@ -51,7 +51,7 @@
   padding: 13px 15px;
   font-family: inherit;
   font-size: 15px;
-  width: 49%;
+  width: 32%;
   cursor: pointer;
   font-weight: bolder;
   transition: filter 0.15s;
