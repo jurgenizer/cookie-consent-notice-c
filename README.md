@@ -8,6 +8,9 @@ Part of a typology of seven cookie consent notice types observed on popular Sout
 Code adapted from [GlowCookies](https://github.com/manucaralmo/GlowCookies) by Almoguera (2021).
 Typology adapted from Utz et al. (2019), who evaluated the GUI of six types of cookie consent notices in a series of online experiments.
 
+### Important:
+This code is for UI testing only. Actual cookie setting/rejecting/deleting functionality is limited.
+
 ### References:
 Almoguera, M. C. (2021). GlowCookies (Version 3.1.6) [Computer source code]. GitHub. https://github.com/manucaralmo/GlowCookies
 
