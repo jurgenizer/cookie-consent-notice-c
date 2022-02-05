@@ -1,7 +1,7 @@
-# cookie-consent-notice-a
-### Cookie consent notice type a (binary, nudging)
+# cookie-consent-notice-c
+### Cookie consent notice type c (ternary, nudging)
 
-Part of a typology of seven cookie consent notice types observed on popular South Africa websites in December 2021. This 'type a' cookie consent notice forms part of my Master of IS research. It will be compared to a [Design Science Research](http://www.desrist.org/desrist/content/design-science-research-in-information-systems.pdf) (DSR) artifact that aims to produce an improved cookie consent notice. 
+Part of a typology of seven cookie consent notice types observed on popular South Africa websites in December 2021. This 'type c' cookie consent notice forms part of my Master of IS research. It will be compared to a [Design Science Research](http://www.desrist.org/desrist/content/design-science-research-in-information-systems.pdf) (DSR) artifact that aims to produce an improved cookie consent notice. 
 
 <img src="/repo-assets/type-c.png" width="300"/>
 
