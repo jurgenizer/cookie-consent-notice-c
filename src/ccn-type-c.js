@@ -47,7 +47,7 @@ class CookieConsentNotice {
                                       style="background-color: ${this.banner.background};"
                                   >
                                       <h3 style="color: ${this.banner.color};">${this.banner.heading}</h3>
-                                      <p style="color: ${this.banner.color};">
+                                      <p id = "description" style="color: ${this.banner.color};">
                                           ${this.banner.description} 
                                           <a 
                                               href="${this.banner.link}"
@@ -58,6 +58,9 @@ class CookieConsentNotice {
                                               ${this.banner.linkText}
                                           </a>
                                       </p>
+                                      <div class="chkbox__section">
+                                      <!-- JavaScript dummy checkboxes go here -->
+                                      </div>
                                       <div class="btn__section">
                                           <button type="button" id="acceptCookies" class="btn__accept accept__btn__styles" style="color: ${this.banner.acceptBtn.color}; background-color: ${this.banner.acceptBtn.background};">
                                               ${this.banner.acceptBtn.text}
@@ -78,6 +81,7 @@ class CookieConsentNotice {
     // SET EVENT LISTENERS
     document.getElementById('prebannerBtn').addEventListener('click', () => this.openSelector())
     document.getElementById('acceptCookies').addEventListener('click', () => this.acceptCookies())
+    document.getElementById('settingsCookies').addEventListener('click', () => this.openSettings())
     document.getElementById('rejectCookies').addEventListener('click', () => this.rejectCookies())
   }
 
@@ -105,6 +109,37 @@ class CookieConsentNotice {
     this.PreBanner.style.display = "none";
     this.DOMbanner.classList.add('cookieConsentNotice__show')
   }
+  /* ---- */
+
+  openSettings(){
+    document.getElementById("description").innerHTML = "Please select the type of cookies we are allowed to use.";
+    document.getElementById("acceptCookies").innerHTML = "Accept All";
+    document.getElementById("acceptCookies").style.width = "48%";
+    document.getElementById("settingsCookies").style.display = "none";
+    document.getElementById("rejectCookies").innerHTML = "Save & Close";
+    document.getElementById("rejectCookies").style.width = "48%";
+    document.getElementsByClassName('chkbox__section')[0].innerHTML = `<label class="container">Neccesary
+    <input type="checkbox" checked="checked">
+    <span class="checkmark"></span>
+    </label>            
+    <label class="container">Personalisation & Design
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Analytics
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Social Media
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>
+    <label class="container">Marketing
+    <input type="checkbox">
+    <span class="checkmark"></span>
+    </label>`;
+}
+
 
   acceptCookies() {
     localStorage.setItem("CookieConsentNotice", "1")
