@@ -62,8 +62,8 @@ class CookieConsentNotice {
                                           <button type="button" id="acceptCookies" class="btn__accept accept__btn__styles" style="color: ${this.banner.acceptBtn.color}; background-color: ${this.banner.acceptBtn.background};">
                                               ${this.banner.acceptBtn.text}
                                           </button>
-                                          <button type="button" id="manageCookies" class="btn__settings settings__btn__styles" style="color: ${this.banner.manageBtn.color}; border: ${this.banner.manageBtn.border}; background-color: ${this.banner.manageBtn.background};">
-                                              ${this.banner.manageBtn.text}
+                                          <button type="button" id="settingsCookies" class="btn__settings settings__btn__styles" style="color: ${this.banner.settingsBtn.color}; border: ${this.banner.settingsBtn.border}; background-color: ${this.banner.settingsBtn.background};">
+                                              ${this.banner.settingsBtn.text}
                                           </button>
                                           <button type="button" id="rejectCookies" class="btn__settings settings__btn__styles" style="color: ${this.banner.rejectBtn.color}; background-color: ${this.banner.rejectBtn.background};">
                                               ${this.banner.rejectBtn.text}
@@ -264,11 +264,11 @@ class CookieConsentNotice {
         background: obj.acceptBtnBackground || '#209cee',
         color: obj.acceptBtnColor || '#fff'
       },
-      manageBtn: {
-        text: obj.manageBtnText || lang.manageBtnText,
-        background: obj.manageBtnBackground || '#eeeeee',
-        color: obj.manageBtnColor || '#4a4a4a',
-        border: obj.manageBtnBorder || '2px solid #4a4a4a'
+      settingsBtn: {
+        text: obj.settingsBtnText || lang.settingsBtnText,
+        background: obj.settingsBtnBackground || '#eeeeee',
+        color: obj.settingsBtnColor || '#4a4a4a',
+        border: obj.settingsBtnBorder || '2px solid #4a4a4a'
       },
       rejectBtn: {
         text: obj.rejectBtnText || lang.rejectBtnText,
@@ -295,7 +295,7 @@ class LanguagesGC {
     this.bannerDescription = lang['bannerDescription']
     this.bannerLinkText = lang['bannerLinkText']
     this.acceptBtnText = lang['acceptBtnText']
-    this.manageBtnText = lang['manageBtnText']
+    this.settingsBtnText = lang['settingsBtnText']
     this.rejectBtnText = lang['rejectBtnText']
     this.manageText = lang['manageText']
   }
@@ -307,7 +307,7 @@ class LanguagesGC {
         'bannerDescription': 'Ons gebruik ons eie koekies en die van derdepartye, om inhoud te verpersoonlik en om webverkeer te ontleed.',
         'bannerLinkText': 'Lees meer oor koekies',
         'acceptBtnText': 'Aanvaar koekies',
-        'manageBtnText': 'Koekie-instellings',
+        'settingsBtnText': 'Instellings vir koekies',
         'rejectBtnText': 'Weier',
         'manageText': 'Koekie-instellings'
       },
@@ -316,7 +316,7 @@ class LanguagesGC {
         'bannerDescription': 'We use our own and third-party cookies to personalize content and to analyze web traffic.',
         'bannerLinkText': 'Read more about cookies',
         'acceptBtnText': 'Accept cookies',
-        'manageBtnText': 'Manage cookies',
+        'settingsBtnText': 'Cookie settings',
         'rejectBtnText': 'Reject',
         'manageText': 'Manage cookies'
       }
