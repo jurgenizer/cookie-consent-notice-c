@@ -46,8 +46,8 @@ class CookieConsentNotice {
                                       class="cookieConsentNotice__banner cookieConsentNotice__banner__${this.config.bannerStyle} cookieConsentNotice__${this.config.border} cookieConsentNotice__${this.config.position}"
                                       style="background-color: ${this.banner.background};"
                                   >
-                                      <h3 style="color: ${this.banner.color};">${this.banner.heading}</h3>
-                                      <p id = "description" style="color: ${this.banner.color};">
+                                      <h3 id="heading" style="color: ${this.banner.color};">${this.banner.heading}</h3>
+                                      <p id="description" style="color: ${this.banner.color};">
                                           ${this.banner.description} 
                                           <a 
                                               href="${this.banner.link}"
@@ -109,9 +109,9 @@ class CookieConsentNotice {
     this.PreBanner.style.display = "none";
     this.DOMbanner.classList.add('cookieConsentNotice__show')
   }
-  /* ---- */
 
-  openSettings(){
+  openSettings(){document.getElementById("description").innerHTML = "Please select the type of cookies we are allowed to use.";
+    document.getElementById("heading").innerHTML = "Cookie Settings";
     document.getElementById("description").innerHTML = "Please select the type of cookies we are allowed to use.";
     document.getElementById("acceptCookies").innerHTML = "Accept All";
     document.getElementById("acceptCookies").style.width = "48%";
