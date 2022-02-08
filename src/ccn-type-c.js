@@ -1,5 +1,5 @@
 /*
-    Cookie Consent Notice Type a
+    Cookie Consent Notice Type c
     Adapted from https://github.com/manucaralmo/GlowCookies
 */
 
@@ -111,15 +111,15 @@ class CookieConsentNotice {
   }
 
   openSettings(){document.getElementById("description").innerHTML = "Please select the type of cookies we are allowed to use.";
-    document.getElementById("heading").innerHTML = "Cookie Settings";
+    document.getElementById("heading").innerHTML = "Manage Cookies";
     document.getElementById("description").innerHTML = "Please select the type of cookies we are allowed to use.";
     document.getElementById("acceptCookies").innerHTML = "Accept All";
     document.getElementById("acceptCookies").style.width = "48%";
     document.getElementById("settingsCookies").style.display = "none";
     document.getElementById("rejectCookies").innerHTML = "Save & Close";
     document.getElementById("rejectCookies").style.width = "48%";
-    document.getElementsByClassName('chkbox__section')[0].innerHTML = `<label class="container">Neccesary
-    <input type="checkbox" checked="checked">
+    document.getElementsByClassName('chkbox__section')[0].innerHTML = `<label class="container">Neccesary (Always on)
+    <input type="checkbox" checked="checked" disabled>
     <span class="checkmark"></span>
     </label>            
     <label class="container">Personalisation & Design
@@ -302,8 +302,8 @@ class CookieConsentNotice {
       settingsBtn: {
         text: obj.settingsBtnText || lang.settingsBtnText,
         background: obj.settingsBtnBackground || '#eeeeee',
-        color: obj.settingsBtnColor || '#4a4a4a',
-        border: obj.settingsBtnBorder || '2px solid #4a4a4a'
+        color: obj.settingsBtnColor || '#209cee',
+        border: obj.settingsBtnBorder || '1px solid #209cee'
       },
       rejectBtn: {
         text: obj.rejectBtnText || lang.rejectBtnText,
