@@ -111,7 +111,7 @@ class CookieConsentNotice {
   }
 
   openSettings(){document.getElementById("description").innerHTML = "Please select the type of cookies we are allowed to use.";
-    document.getElementById("heading").innerHTML = "Manage Cookies";
+    document.getElementById("heading").innerHTML = "Manage cookies";
     document.getElementById("description").innerHTML = "Please select the type of cookies we are allowed to use.";
     document.getElementById("acceptCookies").innerHTML = "Accept All";
     document.getElementById("acceptCookies").style.width = "48%";
