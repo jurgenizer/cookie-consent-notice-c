@@ -237,24 +237,13 @@
   font-weight: bolder;
   line-height: normal;
   border: none;
+  border-radius: 18px;
   padding: 12px 18px;
   text-decoration: none;
   user-select: none;
   -webkit-box-shadow: 0 .625em 1.875em rgba(2,2,3,.1);
   -moz-box-shadow: 0 .625em 1.875em rgba(2,2,3,.1);
   box-shadow: 0 .625em 1.875em rgba(2,2,3,.1);
-}
-
-.prebanner__border__1 {
-  border-radius: 15px;
-}
-
-.prebanner__border__2 {
-  border-radius: 10px;
-}
-
-.prebanner__border__3 {
-  border-radius: 2px;
 }
 
 .animation {
@@ -268,4 +257,3 @@
 .prebanner:hover {
   text-decoration: none;
 }
-
