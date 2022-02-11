@@ -82,6 +82,7 @@
 
   .btn__section .btn__settings {
       width: 100%;
+      margin-bottom: 7px;
   }
 }
 
